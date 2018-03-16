@@ -1,0 +1,26 @@
+syntax = "proto3";
+package messages;
+
+message Connect {
+    string Id = 2;
+}
+
+message Connected {
+    string Message = 1;
+}
+
+message Message {
+    string UserName = 1;
+    string Message = 2;
+}
+
+message Error {
+    string info = 1;
+}
+
+message ListConnected{
+
+}
+message UserList{
+    repeated string UserName = 1;
+}
